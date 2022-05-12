@@ -9,8 +9,8 @@ export class Category {
   @Prop()
   name: string;
 
-  @Prop()
-  createdAt: number;
+  @Prop({default:new Date()})
+  createdAt?: number;
 
   @Prop()
   description: string;
